@@ -6,7 +6,7 @@ const rot13 = (str) => {
     } else if (original.charCodeAt() >= 65 && original.charCodeAt() < 78) {
       const number = original.charCodeAt() + 13;
       return String.fromCharCode(number);
-    } else if (original !== /A-Z/g) {
+    } else {
       return original
     }
   }).join('');
